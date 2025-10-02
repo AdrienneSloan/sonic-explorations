@@ -142,7 +142,7 @@
         <div class="card-container">
             <div class="card" id="explorationCard" onclick="flipCard()">
                 <div class="card-face card-front">
-                    <h2>draw a sonic exploration</h2>
+                    <h2>draw a listening practice</h2>
                 </div>
                 <div class="card-face card-back">
                     <div class="exploration-text" id="explorationText">
@@ -153,39 +153,51 @@
         </div>
         
         <div class="actions">
-            <button class="btn" onclick="drawNewCard()">draw another exploration</button>
+            <button class="btn" onclick="drawNewCard()">draw another practice</button>
         </div>
     </div>
 
     <script>
         const explorations = [
-            "For the next hour, every time you open or close something (door, drawer, book, container), do it with the intention of making music. Notice how this changes your relationship to ordinary actions.",
+            "For the next hour, every time you open or close something (door, drawer, book, container), do it with the intention of listening-with. Notice how this changes your relationship to ordinary sounds.",
             
-            "Listen to all of the sounds behind you. Turn around and move toward the direction of the last sound you heard. Notice how it feels in your body as you move toward this sound.",
+            "Set an alarm for thirty minutes before sunrise or sit by a window during any transitional time. Listen without trying to identify specific sounds. Instead, notice the density of sound, the rhythm of emergence, the layering as more voices join. How does sound itself wake up?",
+            
+            "Listen to all of the sounds behind you. Turn around and move in the direction of the last sound you heard. Notice how it feels in your body as you move toward this sound. Where in your body can you feel this sound? Let your body respond back in any way it chooses.",
             
             "Find a sound in your environment that you often overlook, a sound that might typically annoy you. Listen-with it until it softens into something else.",
             
-            "Choose an everyday activity - putting away the dishes, cleaning the countertop, making food. Spend 3 minutes engaged in this activity while listening to every sound. Listen to them individually, then listen to them all together.",
+            "Hold an inherited object or look at a photograph of someone who came before you. Close your eyes and listen to the ambient sounds around you. Imagine: What sounds did this person or object know that no longer exist? Let five minutes pass while holding both this present soundscape and imagined past soundscapes together.",
             
-            "Find a memory from childhood that elicits joy. Hold that memory in your mouth gently. Listen for the sounds this memory makes. Open your mouth and let the sound memory be carried out into the room like an offering.",
+            "Sit or lie comfortably and place your hands on different parts of your body—chest, belly, throat, sides. As you breathe naturally, notice where you can hear or feel your breath most distinctly. Spend five minutes mapping the subtle sounds and sensations of your breathing. Where does breath make sound? Where is it silent?",
+            
+            "Choose an everyday activity - putting away the dishes, cleaning the countertop, making food. Spend 3 minutes engaged in this activity while listening to every sound. Listen to them individually, then listen to them all together. Give this sound composition a title.",
+            
+            "Find a memory from childhood that elicits joy. Hold that memory in your mouth gently. Listen for the sounds this memory makes. Open your mouth and let the sound memory be carried out into the room like an offering. Notice how the memory feels in your body now.",
+            
+            "At the end of each day this week, write down one sound that stayed with you. Just the date and a brief description. By week's end, read through your sonic diary and notice what patterns emerge.",
             
             "Place your ear directly against five different surfaces in your space - a wall, table, door, window, floor. Listen through each surface for 30 seconds. Which surface tells you the most secrets about what's happening beyond it?",
             
-            "For the next 5 minutes, each time you notice a sound near or far, let your body respond to the sound in whatever way it chooses.",
+            "For the next 5 minutes, each time you notice a sound near or far, let your body respond to the sound in whatever way it chooses. Create a movement piece for this moment in time.",
             
             "Recall a recent dream, or a snippet of a dream that still feels alive for you. As you wander back into the dream, listen for all of the sounds present. Choose one that intrigues you and pause to explore-with this sound.",
             
-            "Identify the most unique sound in your current environment - something that exists nowhere else. Record it or remember it carefully. This is your sonic fingerprint of this exact moment and place.",
+            "Identify the most unique sound in your current environment - something that exists nowhere else. Record it or remember it carefully. This is your sonic fingerprint of this exact moment and place. Assign a date, time, and location.",
             
-            "From wherever you are, listen out your nearest window for five minutes. Imagine you're listening to a radio play where you can only hear the audio. Create a story about what's happening based solely on the sounds you hear.",
+            "From wherever you are, listen outward for three minutes. Imagine you're listening to a radio play where you can only hear the sounds, not the details. Create a story about what's happening based solely on the sounds you hear.",
             
-            "Find an old photograph from a time before you were born. Hold the photo and listen. Notice all of the sounds you imagine that are held in this moment.",
+            "Find an old photograph from a time before you were born. Hold the photo and listen. Notice all of the sounds you imagine that are held in this moment. Invite those sounds in or around your body. What do you notice? What do you hear?",
             
-            "Choose three different parts of your body to listen through—your chest, the back of your neck, your palm. Place each body part against a wall, table, pillow, or chosen object and spend one minute listening through it. Notice how each part of you hears differently.",
+            "Choose one location in your living space. Visit it at the top of three different hours today. Stand in the exact same spot and listen for two minutes each time. Notice what changes and what remains constant. Create three simple maps or mark-makings to show the sonic differences across time.",
             
-            "Follow one sound through until it fades. Repeat for 3 minutes.",
+            "Choose three different parts of your body to listen through—the back of your head, the soles of your feet, your palm. Place each body part against a wall, table, pillow, or chosen object and spend one minute listening through it. Notice how each part of you listens differently.",
             
-            "Spend 10 minutes exploring an inside or outside space, listening to the sounds you notice."
+            "Follow one sound through until it fades. Then locate another sound. Repeat 3 times.",
+            
+            "Walk or roll through your space, indoors or out. Allow yourself to be led by the sounds that feel intriguing. Do this for 10 minutes. Make a map of the locations and sounds you encountered.",
+            
+            "As daylight fades, sit or lie in the same spot for twenty minutes. Notice not individual sounds but the overall shift in acoustic atmosphere. What sounds emerge as light disappears? What sounds fade? Does evening have a different sonic texture than morning?"
         ];
         
         let currentExplorationIndex = -1;
